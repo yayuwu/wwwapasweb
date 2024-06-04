@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --colorFondo: #F2F2F2;
+    --colorSecundario: #FCEE21;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales */
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--colorFondo);
+    margin: 0;
+}
+
+nav, 
+header,
+main {
+    padding: 0 7em;
+}
+
+nav,
+header,
+ul,
+#servicios,
+#icons,
+#contacto-contenido,
+#contacto,
+main > section,
+footer,
+form,
+form > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 > strong,
+footer h1 {
+    font-family: "Coiny", system-ui;
+    font-weight: 500;
+}
+
+/* Estilos subrayado */
+
+.subrayado {
+    background-color: var(--colorSecundario);
+}
+
+h3,
+h2,
+#contacto p {
+    padding: .1em 0;
+    display: inline-block;
+}
+
+
+#servicios li {
+    list-style-position: inside;
+}
+
+/* Estilos form */
+
+form {
+    flex-direction: column;
+}
+
+/* Estilos nav */
+
+nav {
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+nav li {
+    list-style: none;
+    padding: 0 3em;
+}
+
+/* Estilos header */
+
+header {
+    justify-content: space-between;
+    margin-top: 5em;
+}
+
+header > div {
+    width: 400px;
+}
+
+header p, 
+article p {
+    font-size: 18px;
+}
+
+header h1,
+header h2 {
+    font-weight: 400;
+}
+
+header h2 {
+    font-size: 18px;
+    margin-top: -40px;
+}
+
+h1 > strong {
+    display: block;
+    font-size: 88px;
+    margin-top: -40px;
+}
+
+/* Estilos articles */
+
+main > section {
+    justify-content: space-between;
+    margin: 3em 0;
+}
+
+article p {
+    margin-top: -10px;
+}
+
+article {
+    width: 400px;
+}
+
+/* Estilos servicios */
+
+#servicios {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 4em 0;
+}
+
+#servicios > div {
+    width: 400px;
+}
+
+#servicios h4 {
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-left: 40px;
+}
+
+#servicios li {
+    padding-bottom: 1.5em;
+    font-size: 18px;
+}
+
+#servicios li:last-child {
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0;
+}
+
+/* Estilos imágenes */
+
+#servicios img,
+header img {
+    width: 500px;
+}
+
+
+
+#icons img {
+    width: 100px;
+}
+
+nav img {
+    width: 200px;
+}
+
+/* Estilos contacto */
+
+#contacto {
+    flex-direction: column;
+}
+
+#contacto h4 {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+
+#contacto p {
+    font-weight: 700;
+    padding: .2em 1em;
+    font-size: 18px;
+}
+
+#contacto-contenido {
+    justify-content: space-between;
+}
+
+/* Estilos form  */
+
+label,
+input,
+textarea {
+    margin-bottom: 1em;
+    outline: none;
+}
+
+label {
+    font-weight: 700;
+}
+
+label span {
+    color: red;
+}
+
+input {
+    height: 40px;
+}
+
+textarea {
+    resize: none;
+}
+
+input, 
+textarea {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+form {
+    min-width: 400px;
+    margin-top: 40px;
+    margin-bottom: 2.5em;
+}
+
+form > div {
+    justify-content: space-between;
+}
+
+button {
+    background-color: black;
+    color: #F2F2F2;
+    border: 1px solid black;
+    font-size: 18px;
+    padding: .5em 1em;
+    cursor: pointer;
+}
+
+/* Estilos icons redes */
+
+#icons {
+    justify-content: space-around;
+    padding: 3em 0;
+}
+
+/* Estilos footer */
+
+footer {
+    background-color: var(--colorSecundario);
+    align-items: center;
+    padding-left: 7em;
+}
+
+footer h1 {
+    padding-right: 2em;
+}
